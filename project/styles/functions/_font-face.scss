@@ -1,0 +1,25 @@
+@mixin font-face($fontname, $filename, $fontweight: 'normal', $fontstyle: 'normal') {
+    @font-face {
+        font-family: '#{$fontname}';
+        font-display: block;
+        src:
+        url('#{$font-path}#{$filename}.woff2') format('woff2'),
+        url('#{$font-path}#{$filename}.woff') format('woff');
+
+        @if $fontweight == 'normal' {
+            font-weight: normal;
+        }
+
+ @else {
+            font-weight: $fontweight;
+        }
+
+        @if $fontstyle == 'normal' {
+            font-style: normal;
+        }
+
+ @else {
+            font-style: $fontstyle;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+	"verbose": true,
+	"execMap": {
+		"js": "babel-node --config-file ./preprocess/server/babel.start.config.js"
+	},
+	"watch": [
+		"server/index.js",
+		"server/routes.js",
+		"server/middleware/index.js",
+		"server/utils/auth.js",
+		"preprocess/server",
+		"preprocess/utils",
+		".next/runtime.config.json",
+		".next/runtime.credentials.json",
+		"babel.config.js",
+		"postcss.config.js",
+		"next.config.js"
+	],
+	"ignore": [],
+	"env": {
+		"NODE_ENV": "development",
+		"CONTRIBUTION": true
+	},
+	"ext": "js,json"
+}

@@ -1,0 +1,4 @@
+@mixin flex-horizontal($align: center, $display: flex) {
+    display: $display;
+    justify-content: $align;
+}

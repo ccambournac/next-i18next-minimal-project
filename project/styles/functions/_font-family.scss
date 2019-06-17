@@ -1,0 +1,11 @@
+@mixin font-family($family, $weight: null, $style: null) {
+	font-family: $family;
+
+	@if $weight != null {
+		font-weight: $weight;
+	}
+
+	@if $style != null {
+		font-style: $style;
+	}
+}

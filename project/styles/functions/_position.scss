@@ -1,0 +1,11 @@
+@mixin position($position: relative, $width: 50, $left: 25, $top: 0, $offset: false, $unit: "%", $order: 1) {
+    position: $position;
+    width: $width+unquote("%");
+    margin-left: $left+unquote("%");
+    order: $order;
+    @if ($offset) {
+        margin-top: calc(#{$offset} + #{$top}#{$unit});
+    } @else {
+        margin-top: #{$top}#{$unit};
+    }
+}

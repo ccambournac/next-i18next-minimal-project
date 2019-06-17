@@ -1,0 +1,9 @@
+:global {
+	%title-font-regular {
+		font-family: $font-family-regular, $font-family-base;
+
+		.font-family-basic {
+			font-family: $font-family-base;
+		}
+	}
+}

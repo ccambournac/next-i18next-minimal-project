@@ -1,0 +1,57 @@
+$img-path: '/static/images/' !default;
+$font-path: '/static/fonts/' !default;
+
+$global-border-box: true !default;
+
+// FONTS
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-regular: "Roboto", $font-family-base;
+
+// COMMONS
+$common-text-shadow: 1px 1px 1px rgba(59, 59, 59, .40), 0.5px 0.5px 0 rgba(59, 59, 59, 0.60);
+$common-icon-shadow: 0px 0.5px 2px rgba(59, 59, 59, .65);
+
+// Layout
+$menu-margin-default: 2.4rem;
+$menu-margin-push: .4rem;
+$menu-padding-default: 1.6rem;
+
+// Push
+$push-ratio: 268/375;
+
+// Video
+$video-ratio: 210/375;
+
+// Slideshow
+$slideshow-ratio: 210/375;
+
+$slideshow-dots-padding: 30px;
+$slideshow-dot-padding: 10px;
+$slideshow-dot-visible: 5;
+$slideshow-dot-default-height: 5px;
+$slideshow-dot-active-height: 9px;
+
+// MQ
+$breakpoints: (
+    small: 812px,
+    medium: 1024px,
+    large: 1280px,
+    mobile-portrait: 424px,
+    mobile-landscape: 812px, // landscape
+    tablet-portrait: 1024px, // portrait
+    tablet-landscape: 1280px, // landscape
+    desktop-ld: 1440px,
+    desktop-md: 1600px,
+    desktop-hd: 1920px
+);
+
+// Z-INDEX
+$Z_INDEX_BASE: 2;
+$Z_INDEX_MAX: 2147483647;
+
+$z-indexes: (
+    below: -1,
+    default: $Z_INDEX_BASE
+);
+
+

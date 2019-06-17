@@ -1,0 +1,15 @@
+{
+    "publicRuntimeConfig": {},
+    "serverRuntimeConfig": {
+        "backstage": {},
+        "frontstage": {
+            "port": 8000,
+            "ssl": {
+                "enabled": false,
+                "credentials": {}
+            },
+            "cachePath": "/data/cache/onp-academy/"
+        },
+        "services": {}
+    }
+}

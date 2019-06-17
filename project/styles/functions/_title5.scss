@@ -1,0 +1,15 @@
+@mixin fontTitle5() {
+  font-weight: 600;
+  @media(max-width: 812px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  @media(min-width: 813px) and (max-width: 1159px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media(min-width: 1160px) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

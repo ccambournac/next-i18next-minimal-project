@@ -1,0 +1,30 @@
+@mixin ratioImg($paddingTop: 0, $unit: "%", $offset: false) {
+  //overflow: hidden;
+  @if ($offset) {
+    padding-top: calc(#{$offset} + #{$paddingTop}#{$unit});
+  } @else {
+    padding-top: #{$paddingTop}#{$unit};
+  }
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+* Selon format
+*/
+@mixin ratioFormatImg($ratioLargeur: 16, $ratioHauteur: 9, $hauteurImg: 0) {
+  width: calc(#{$ratioLargeur} * #{$hauteurImg} / #{$ratioHauteur});
+}

@@ -1,0 +1,8 @@
+{
+  "h1": "Un exemple simple",
+  "change-locale": "Changer la langue",
+  "to-sessions": "Page suivante",
+  "to-sessions-imperative": "Page suivante (impératif)",
+  "error-with-status": "Une erreur serveur ({{statusCode}}) s'est produite.",
+  "error-without-status": "Une erreur s'est produite."
+}
