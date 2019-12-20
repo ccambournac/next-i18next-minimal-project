@@ -28,20 +28,20 @@ class DigitalAcademy extends Document {
         //noinspection HtmlRequiredTitleElement
         return (
             <html lang={lang} data-locale={locale}>
-            <Head>
-                <link rel="dns-prefetch" href=""/>
+                <Head>
+                    <link rel="dns-prefetch" href=""/>
 
-                <meta charSet="utf-8"/>
-                <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no"/>
-                {environment !== 'prod' ? <meta name="robots" content="noindex, nofollow"/>
-                    : <meta name="robots" content="all, index, follow, noydir, noodp"/>}
-            </Head>
-            <body>
-            <Main/>
-            <NextScript/>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no"/>
+                    {environment !== 'prod' ? <meta name="robots" content="noindex, nofollow"/>
+                        : <meta name="robots" content="all, index, follow, noydir, noodp"/>}
+                </Head>
+                <body>
+                    <Main/>
+                    <NextScript/>
 
-            <onp dangerouslySetInnerHTML={{__html: `<!-- DIGITAL ACADEMY :: Version ${process.env.VERSION} :: Build date: ${process.env.BUILD_DATE} :: Build type: ${process.env.NODE_ENV.toUpperCase()} -->`}}/>
-            </body>
+                    <onp dangerouslySetInnerHTML={{__html: `<!-- DIGITAL ACADEMY :: Version ${process.env.VERSION} :: Build date: ${process.env.BUILD_DATE} :: Build type: ${process.env.NODE_ENV.toUpperCase()} -->`}}/>
+                </body>
             </html>
         );
     }

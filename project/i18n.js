@@ -7,7 +7,10 @@ import NextI18Next from 'next-i18next';
 const NextI18NextInstance = new NextI18Next({
     defaultLanguage: 'en',
     otherLanguages: ['fr'],
-    localeSubpaths: 'all',
+    localeSubpaths: {
+        fr: 'fr',
+        en: 'en'
+    },
     localePath: 'i18n',
     browserLanguageDetection: true,
     serverLanguageDetection: false,
